@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/planet"
+    tools:context=".LoginFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:drawableLeft="@drawable/baseline_info_24"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:hint="password..."
+            android:background="#30FF"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            app:layout_constraintStart_toStartOf="@+id/etUsernameLogin"
+            app:layout_constraintTop_toBottomOf="@+id/etUsernameLogin" />
+
+        <EditText
+            android:id="@+id/etUsernameLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="195dp"
+            android:drawableLeft="@drawable/baseline_person_outline_24"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:hint="username..."
+
+            android:background="#30FF"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/btn"
+            android:text="Login"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etPasswordLogin" />
+
+        <TextView
+            android:id="@+id/tvSignupLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="16dp"
+            android:text="signup"
+            android:textColor="#0E0E0E"
+            android:background="#33CAEDED"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/btnLoginLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btnLoginLogin" />
+
+        <TextView
+            android:id="@+id/tvForgotLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="21dp"
+            android:text="Forgot Password"
+            android:background="#33C7ECEC"
+            android:textColor="#101010"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnLoginLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
